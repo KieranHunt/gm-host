@@ -1,0 +1,3 @@
+# Serve a static launch page instead of hosting an application
+
+Userscript managers require an ordinary injectable HTTP(S) document, so GM Host serves a minimal HTTP 200 HTML page while each userscript supplies and renders the entire experience. A browser extension could avoid HTTP hosting entirely, but it would change the installation and distribution model; third-party and specially constructed URLs were rejected as unreliable or unsafe. Keeping application content out of the page preserves the userscript-only architecture and limits the hosted site's responsibility to providing a stable launch origin.
